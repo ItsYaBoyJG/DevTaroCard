@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(50, 50, 50);
+  padding: 2rem;
+}
+
+#title {
+  color: rgb(128, 172, 210);
+  text-align: center;
+  /* display: table-row; */
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.card-container {
+    padding: 20px;
+  border-color: aqua;
+  align-items: center;
+  justify-content: center;
+  border: 32px;
+}
+
+.card {
+    height: 400px;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px;
+  width: 400px;
+  max-width: 50%;
+  margin: auto;
+}
+
+.btn-row {
+  padding: 30px;
+  display: flex;
+  max-width: 100%;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  background-color: rgb(164, 197, 207);
+  color: black;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  border-color: black;
+  border-radius: 6px;
+}
+
+.draw-btn-con {
+    padding: 10px;
+
+}

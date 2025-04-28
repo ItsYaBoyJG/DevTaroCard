@@ -30,15 +30,24 @@ function App() {
 
   return (
     <main className="App">
-      <h1 >Taroh Card</h1>
+      <h1 className="App-header">Taroh Card</h1>
       {card ? (
         <>
           <AdviceCard title={card.title} message={card.message} />
-          <button onClick={drawCard}>Draw Another Card</button>
+          <button className="btn" id="card" onClick={drawCard}>
+            Draw Another Card
+          </button>
         </>
       ) : (
-        <button onClick={drawCard}>Draw a Card</button>
+        <button className="btn" id="card" onClick={drawCard}>
+          Draw a Card
+        </button>
       )}
+
+      <div className="row">
+        <button className="btn">Create a Card</button>{" "}
+        <button className="btn">💖 Like</button>
+      </div>
     </main>
   );
 }

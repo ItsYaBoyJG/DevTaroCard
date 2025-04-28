@@ -11,7 +11,7 @@ export const AdviceCard: React.FC<CardProps> = ({title, message}) => {
     const [flipped, setFlipped] = useState(false);
 
     return (
-        <div onClick={()=> setFlipped(!flipped)}>
+        <div className="card" onClick={()=> setFlipped(!flipped)}>
             <motion.div
             animate={{rotateY: flipped ? 180 : 0}}
             transition={{duration: 0.8}}
@@ -19,9 +19,9 @@ export const AdviceCard: React.FC<CardProps> = ({title, message}) => {
             >
             {/*Front of Card */}
             <div>
-
+                <img src="" alt="" />
             </div>
-            <div>
+            <div className="card-text">
                 <h3>{title}</h3>
                 <p>{message}</p>
             </div>

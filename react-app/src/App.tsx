@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
+import duck from './assets/images/rubber-duck.jpg';
+import evRImage from "./assets/images/ev-rev.jpg";
+import love from "./assets/images/love-letter.jpg";
 import "./App.css";
 import { AdviceCard } from "./card";
 
@@ -7,19 +9,22 @@ const sampleDeck = [
   {
     title: "The Rubber Duck",
     message: "Explain your bug to an inanimate object. It will solve itself.",
+    image: duck,
   },
   {
     title: "The Refactor",
     message: "You are tempted to rewrite. Sometimes evolution > revolution.",
+    image: evRImage,
   },
   {
     title: "The Commit",
     message: "Commit messages are like love letters to your future self.",
+    image: love,
   },
 ];
 
 function App() {
-  const [card, setCard] = useState<{ title: string; message: string } | null>(
+  const [card, setCard] = useState<{ title: string; message: string; image:string; } | null>(
     null
   );
 
@@ -33,7 +38,7 @@ function App() {
       <h1 className="App-header">Taroh Card</h1>
       {card ? (
         <>
-          <AdviceCard title={card.title} message={card.message} />
+          <AdviceCard title={card.title} message={card.message}  image={card.image}/>
           <button className="btn" id="card" onClick={drawCard}>
             Draw Another Card
           </button>

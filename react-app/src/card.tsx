@@ -5,9 +5,10 @@ import React from "react";
 type CardProps = {
     title: string;
     message: string;
+    image: string;
 };
 
-export const AdviceCard: React.FC<CardProps> = ({title, message}) => {
+export const AdviceCard: React.FC<CardProps> = ({title, message, image}) => {
     const [flipped, setFlipped] = useState(false);
 
     return (
@@ -19,7 +20,7 @@ export const AdviceCard: React.FC<CardProps> = ({title, message}) => {
             >
             {/*Front of Card */}
             <div>
-                <img src="" alt="" />
+                <img className="image" src={image} alt="" />
             </div>
             <div className="card-text">
                 <h3>{title}</h3>

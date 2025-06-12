@@ -12,17 +12,22 @@
     <h5 id="title">Maybe...</h5>
     <!-- Tarot Card -->
     <div class="card">
-      <div><img class="image" src="{image}" alt="" /></div>
-    </div>
-    <div class="card-text">
-      <h3></h3>
-      <p></p>
+      <img
+        class="image"
+        src=""
+        alt=""
+        srcset=""
+      />
+      <div class="card-text">
+        <h3 id="card-title"></h3>
+        <p id="card-message"></p>
+      </div>
     </div>
     <!-- Button for drawing a card -->
-    <button class="btn" id="card"></button>
+    <button class="btn" id="card" onclick="drawCard()">Draw a Card</button>
     <!-- Button Row -->
     <div class="row">
-      <button class="btn">Create a card</button>
+      <a class="btn" href="./pages/create.html">Create a card</a>
       <button class="btn">💖 Like</button>
     </div>
 

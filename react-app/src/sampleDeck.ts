@@ -1,4 +1,6 @@
-const duck = '/assets';
+import duck from './assets/images/rubber-duck.jpg';
+import evRImage from "./assets/images/ev-rev.jpg";
+import love from "./assets/images/love-letter.jpg";
 
 const sampleDeck = [
   {
@@ -18,15 +20,4 @@ const sampleDeck = [
   },
 ];
 
-  const CardProps = {
-    title:'',
-    message: '',
-    image:'',
-  }
-
-  function drawCard(card) {
-    const random = sampleDeck[Math.floor(Math.random() * sampleDeck.length)];
-    return random;
-  }
-
-  
+export default sampleDeck;

@@ -6,7 +6,6 @@
   padding-top: 2rem;
   padding-left: 4rem;
   width: 99%; */
-  margin: 0;
   font-family: "Inter", sans-serif;
   background: linear-gradient(135deg, #1e1e2f, #141421);
   color: #fff;
@@ -35,24 +34,13 @@
 }
 
 .card {
-  /* border: 2px solid rgb(137, 137, 185);
-  border-radius: 0.5em;
-  height: 350px;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 25%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px; */
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(16px);
   border-radius: 20px;
   padding: 2rem;
   text-align: center;
-  height: 250px;
+  height: 300px;
   width: 320px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
@@ -61,20 +49,22 @@
   transform: translateY(-5px);
 }
 
-#card {
+.card {
   text-align: center;
   justify-self: center;
   justify-content: center;
   /* display: flex; */
   /* margin: auto; */
   margin: 2rem;
+
+
 }
 .card-title {
   font-weight: 700;
   font-size: 1.3rem;
   margin: 0.5rem 0;
 }
-.card-text {
+.card-title .card-text {
   /* padding: 20px;
   width: 20em; */
   /* position: absolute; */
@@ -127,7 +117,49 @@
   height: 50px;
 }
 
+.form-container{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
 .form {
   margin: 1rem;
   padding: 1rem;
+}
+input[type="text"], textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: 1f1f2e;
+}
+
+.topnav {
+  background: linear-gradient(135deg, #1e1e2f, #141421);
+  overflow: hidden;
+}
+
+.topnav a {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+  float: left;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;border-radius: 8px;
+  color: white;
+}
+
+.topnav a:hover {
+  background-color: #8000d7;
+}
+
+.topnav a.active {
+  transform: scale(0.97);
 }
